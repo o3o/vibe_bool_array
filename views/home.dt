@@ -1,0 +1,15 @@
+doctype html
+html
+   head
+      title Sample service
+   body
+      form(method="POST", action="settings")
+         div
+            label Some setting 0
+            input(name="x_0", type="checkbox")
+            label Some setting 1
+            input(name="x_1", type="checkbox")
+            label Some setting 2
+            input(name="x_2", type="checkbox")
+         div
+            button(type="sumbit") OK
