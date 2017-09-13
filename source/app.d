@@ -9,6 +9,7 @@ struct Data {
 struct Doc {
    string name;
    int size;
+   bool ro;
 }
 struct Dir {
    string name;
@@ -58,8 +59,8 @@ class SampleService {
       logInfo("GET dir");
       import std.string;
       Dir dir = Dir("prova");
-      dir.docs ~= Doc("aa", 16);
-      dir.docs ~= Doc("bb", 32);
+      dir.docs ~= Doc("aa", 16, true);
+      dir.docs ~= Doc("bb", 32, false);
       render!("dir.dt", dir);
    }
 

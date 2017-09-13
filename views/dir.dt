@@ -7,13 +7,19 @@ html
          div
             label dir Name
             input(name="dir_name", type="text", value=dir.name)
+         div
             label Doc 0 name
             input(name="dir_docs_0_name", type="text", value = dir.docs[0].name)
             label Doc 0 size
             input(name="dir_docs_0_size", type="text", value = dir.docs[0].size)
+            label Doc 0 RO
+            input#si(name="dir_docs_0_ro", type="checkbox", checked=dir.docs[0].ro)
+         div
             label Doc 1 name
             input(name="dir_docs_1_name", type="text", value = dir.docs[1].name)
             label Doc 1 size
             input(name="dir_docs_1_size", type="text", value = dir.docs[1].size)
+            label Doc 1 RO
+            input#si(name="dir_docs_1_ro", type="checkbox", checked=dir.docs[1].ro)
          div
             button(type="sumbit") OK
