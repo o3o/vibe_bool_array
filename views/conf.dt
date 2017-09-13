@@ -1,0 +1,18 @@
+doctype html
+html
+   head
+      title Conf
+   body
+      form(method="POST", action="conf")
+         div
+            label Name
+            input(name="conf_0_name", type="text", value=conf[0].name)
+            label Age i
+            input(name="conf_0_age", type="text", value = conf[0].age)
+         div
+            label Daugther
+            input(name="conf_1_name", type="text", value=conf[1].name)
+            label Age i
+            input(name="conf_1_age", type="text", value = conf[1].age)
+         div
+            button(type="sumbit") OK

@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title dir
+   body
+      form(method="POST", action="dir")
+         div
+            label dir Name
+            input(name="dir_name", type="text", value=dir.name)
+            label Doc 0 name
+            input(name="dir_docs_0_name", type="text", value = dir.docs[0].name)
+            label Doc 0 size
+            input(name="dir_docs_0_size", type="text", value = dir.docs[0].size)
+            label Doc 1 name
+            input(name="dir_docs_1_name", type="text", value = dir.docs[1].name)
+            label Doc 1 size
+            input(name="dir_docs_1_size", type="text", value = dir.docs[1].size)
+         div
+            button(type="sumbit") OK
